@@ -1,0 +1,62 @@
+body {
+  font-family: 'Merriweather', serif;
+}
+
+/* TIME - DIGITAL CLOCK */
+.the-clock {
+  background-color: #000;
+  border: 5px solid transparent;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px  0 rgba(0, 0, 0, 0.7);
+  height: auto;
+  margin-top: 35px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+  width: 60%;
+}
+
+@font-face {
+  font-family: 'digital-clock';
+  src: url('digital-clock.ttf');
+}
+
+@font-face {
+  font-family: 'digital-clock2';
+  src: url('digital-clock2.ttf');
+}
+.time-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  color: rgb(102, 255, 255);
+  font-family: 'digital-clock2';
+  font-size: 6rem;
+  letter-spacing: 5px;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.6), 0 0 10px rgba(102, 255, 255, 0.3), 0 0 15px rgba(102, 255, 255, 0.4);
+}
+
+/*********** ALARM SECTION ***********/
+.alarm-box {
+  margin-top: 20px;
+  width: 45%;
+}
+
+.alarm-buttons {
+  width: 35%;
+}
+
+.my-alarm {
+  color: #99ffff;
+  display: none;
+}
+
+.alarm-headings {
+  color: rgb(102, 255, 255);
+  font-family: 'digital-clock2';
+  text-shadow: 2px 2px #000;
+}
+
+.submit {
+  font-size: 1rem;
+  margin-top: 30px;
+}
