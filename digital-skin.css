@@ -1,5 +1,6 @@
 body {
   font-family: 'Merriweather', serif;
+  overflow: hidden;
 }
 
 /* TIME - DIGITAL CLOCK */
@@ -59,4 +60,40 @@ body {
 .submit {
   font-size: 1rem;
   margin-top: 30px;
+}
+
+.clear {
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+/* media query for mobile layout */
+@media only screen and (max-width: 576px) {
+  .the-clock {
+    height: 90vh;
+    width: 90vw;
+  }
+
+  .time-box {
+    font-size: 3.3rem;
+    margin-top: 40px
+  }
+
+  .alarm-box {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .alarm-buttons {
+    width: 100%;
+  }
+
+  .submit {
+    margin-left: 26px;
+  }
+
+  .clear {
+    margin-right: 26px;
+  }
+
 }

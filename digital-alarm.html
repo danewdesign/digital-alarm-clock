@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="digital-skin.css">
+
+  <!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Space+Mono:400,700&display=swap" rel="stylesheet">
+
+<title>Alarm Clock</title>
+
+</head>
+
+<body>
+  <!-- Date and Time Display -->
+  <div class="container the-clock">
+    <div class="container-fluid time-box">
+      <p class="got-date"></p>
+      <p class="got-time"></p>
+    </div>
+
+    <!-- Alarm Set Heading -->
+    <div class="container-fluid my-alarm"></div>
+
+    <!-- Alarm Box Selector -->
+    <div class="container-fluid alarm-box">
+      <div class="row">
+        <div class="col-4 col-lg-4 alarm-headings">
+          <h5>Hours</h5>
+        </div>
+        <div class="col-4 col-lg-4 alarm-headings">
+          <h5>Minutes</h5>
+        </div>
+        <div class="col-4 col-lg-4 alarm-headings"></div>
+      </div>
+      <div class="row">
+        <div class="col-4 col-lg-4 alarm-selections">
+          <select id="hours" class="btn btn-outline-dark" name="hours">
+            <option value="--">--</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+        </div>
+        <div class="col-4 col-lg-4 alarm-selections">
+          <select id="minutes" class="btn btn-outline-dark" name="minutes">
+            <option value="--">--</option>
+            <option value="00">00</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+            <option value="32">32</option>
+            <option value="33">33</option>
+            <option value="34">34</option>
+            <option value="35">35</option>
+            <option value="36">36</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+            <option value="45">45</option>
+            <option value="46">46</option>
+            <option value="47">47</option>
+            <option value="48">48</option>
+            <option value="49">49</option>
+            <option value="50">50</option>
+            <option value="51">51</option>
+            <option value="52">52</option>
+            <option value="53">53</option>
+            <option value="54">54</option>
+            <option value="55">55</option>
+            <option value="56">56</option>
+            <option value="57">57</option>
+            <option value="58">58</option>
+            <option value="59">59</option>
+          </select>
+        </div>
+        <div class="col-4 col-lg-4 alarm-selections">
+          <select id="meridian" class="btn btn-outline-dark" name="meridian">
+            <option value="--">--</option>
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- ALARM BUTTONS -->
+    <div class="container-fluid alarm-buttons">
+      <div class="row">
+        <div class="col-6 col-lg-6 submit-box">
+          <button id="submit" class="btn btn-outline-info submit" type="button" name="submit-button">Set Alarm</button>
+        </div>
+        <div class="col-6 col-lg-6 clear-box">
+          <button id="clear" class="btn btn-outline-info clear" type="button" name="submit-button">Alarm Off</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="clock.js" charset="utf-8"></script>
+</body>
+
+</html>
