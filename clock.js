@@ -27,6 +27,10 @@ function time() {
     }
   }
 
+  if (hours == 0) {
+    hours = 12;
+  }
+
   if (minutes < 10) {
     minutes = "0" + minutes;
   }
